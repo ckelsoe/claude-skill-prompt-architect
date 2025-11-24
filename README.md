@@ -317,7 +317,7 @@ The skill will automatically:
 
 ### Method 1: npm (Recommended)
 
-The easiest way to install Prompt Architect:
+**Option A: Global Installation (User-Wide)**
 
 ```bash
 # Install globally
@@ -329,14 +329,26 @@ prompt-architect-install
 # Restart Claude Code
 ```
 
-**For project-specific installation:**
+**Option B: Local Installation (Without Global)**
+
+```bash
+# Install package
+npm install @ckelsoe/claude-skill-prompt-architect
+
+# Run installation script using npx
+npx prompt-architect-install
+
+# Restart Claude Code
+```
+
+**Option C: Project-Specific Installation**
 
 ```bash
 # Install as dev dependency
 npm install --save-dev @ckelsoe/claude-skill-prompt-architect
 
-# Install to project
-prompt-architect-install --project
+# Install to project .claude/skills/ folder
+npx prompt-architect-install --project
 
 # Restart Claude Code
 ```
