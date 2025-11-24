@@ -426,6 +426,41 @@ You should see the skill activate with prompt analysis and framework recommendat
 
 ---
 
+## Updating
+
+### Update via npm
+
+**If installed globally:**
+```bash
+# Update to latest version
+npm update -g @ckelsoe/claude-skill-prompt-architect
+
+# Or reinstall
+npm install -g @ckelsoe/claude-skill-prompt-architect@latest
+
+# Restart Claude Code
+```
+
+**If installed locally:**
+```bash
+# Update package
+npm update @ckelsoe/claude-skill-prompt-architect
+
+# Reinstall skill
+npx prompt-architect-install
+
+# Restart Claude Code
+```
+
+**Check current version:**
+```bash
+npm list -g @ckelsoe/claude-skill-prompt-architect
+```
+
+**Note:** npm packages do not auto-update. You must manually run the update command to get the latest version.
+
+---
+
 ## Usage
 
 ### Basic Usage
