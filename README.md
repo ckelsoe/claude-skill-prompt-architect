@@ -722,4 +722,4 @@ A: The frameworks are universal, but the skill is optimized for Claude.
 
 ---
 
-**Built for the prompt engineering community**
+**Transforming your prompts with research-backed frameworks**
