@@ -1,6 +1,6 @@
 {
   "name": "@ckelsoe/claude-skill-prompt-architect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Claude Code skill for analyzing and improving prompts using 7 research-backed frameworks (CO-STAR, RISEN, RISE, TIDD-EC, RTF, Chain of Thought, Chain of Density). Transform vague prompts into expert-level structured prompts.",
   "main": "prompt-architect/SKILL.md",
   "keywords": [
