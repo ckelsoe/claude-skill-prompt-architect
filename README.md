@@ -270,21 +270,28 @@ RESPONSE FORMAT:
 
 ## Quick Start
 
-### 1. Install the Skill
+### 1. Install via npm (Recommended)
+
+```bash
+# Install globally
+npm install -g @ckelsoe/claude-skill-prompt-architect
+
+# Run installation script
+prompt-architect-install
+```
+
+**Alternative: Manual Installation**
+
+If you prefer not to use npm:
 
 **macOS/Linux:**
 ```bash
-cp -r prompt-architect ~/.claude-code/skills/
-```
-
-**Windows (Command Prompt):**
-```cmd
-xcopy prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
+cp -r prompt-architect ~/.claude/skills/
 ```
 
 **Windows (PowerShell):**
 ```powershell
-Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
+Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude\skills\prompt-architect" -Recurse
 ```
 
 ### 2. Restart Claude Code
@@ -308,18 +315,48 @@ The skill will automatically:
 
 ## Installation
 
-### Prerequisites
+### Method 1: npm (Recommended)
+
+The easiest way to install Prompt Architect:
+
+```bash
+# Install globally
+npm install -g @ckelsoe/claude-skill-prompt-architect
+
+# Run installation script
+prompt-architect-install
+
+# Restart Claude Code
+```
+
+**For project-specific installation:**
+
+```bash
+# Install as dev dependency
+npm install --save-dev @ckelsoe/claude-skill-prompt-architect
+
+# Install to project
+prompt-architect-install --project
+
+# Restart Claude Code
+```
+
+### Method 2: Manual Installation
+
+If you prefer not to use npm:
+
+#### Prerequisites
 
 - Claude Code installed and configured
 - Python 3.7+ (optional, for analysis scripts)
 
-### Installation Steps
+#### Installation Steps
 
 1. **Clone or Download this Repository**
 
 ```bash
-git clone https://github.com/ckelsoe/prompt-architect.git
-cd prompt-architect
+git clone https://github.com/ckelsoe/claude-skill-prompt-architect.git
+cd claude-skill-prompt-architect
 ```
 
 2. **Copy Skill to Claude Code Directory**
@@ -327,21 +364,21 @@ cd prompt-architect
 The skill needs to be in your Claude Code skills folder.
 
 **Default Locations:**
-- Windows: `C:\Users\<YourName>\.claude-code\skills\`
-- macOS: `~/.claude-code/skills/`
-- Linux: `~/.claude-code/skills/`
+- Windows: `C:\Users\<YourName>\.claude\skills\`
+- macOS: `~/.claude/skills/`
+- Linux: `~/.claude/skills/`
 
 **Installation Commands:**
 
 ```bash
 # macOS/Linux
-cp -r prompt-architect ~/.claude-code/skills/
+cp -r prompt-architect ~/.claude/skills/
 
 # Windows (PowerShell)
-Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
+Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude\skills\prompt-architect" -Recurse
 
 # Windows (Command Prompt)
-xcopy prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
+xcopy prompt-architect %USERPROFILE%\.claude\skills\prompt-architect /E /I
 ```
 
 3. **Verify Installation**
@@ -350,10 +387,10 @@ Check that all files are present:
 
 ```bash
 # macOS/Linux
-ls ~/.claude-code/skills/prompt-architect/
+ls ~/.claude/skills/prompt-architect/
 
 # Windows (PowerShell)
-ls $env:USERPROFILE\.claude-code\skills\prompt-architect\
+ls $env:USERPROFILE\.claude\skills\prompt-architect\
 
 # Should see:
 # - SKILL.md (required)

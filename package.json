@@ -1,0 +1,81 @@
+{
+  "name": "@ckelsoe/claude-skill-prompt-architect",
+  "version": "1.0.0",
+  "description": "Claude Code skill for analyzing and improving prompts using 7 research-backed frameworks (CO-STAR, RISEN, RISE, TIDD-EC, RTF, Chain of Thought, Chain of Density). Transform vague prompts into expert-level structured prompts.",
+  "main": "prompt-architect/SKILL.md",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "prompt-engineering",
+    "prompt-improvement",
+    "co-star",
+    "risen",
+    "rise",
+    "tidd-ec",
+    "rtf",
+    "chain-of-thought",
+    "chain-of-density",
+    "ai-prompts",
+    "llm-prompts",
+    "prompt-optimization",
+    "prompt-frameworks",
+    "ai-engineering",
+    "llm-engineering"
+  ],
+  "author": "Charles Kelsoe <charles@kelsoe.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckelsoe/claude-skill-prompt-architect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ckelsoe/claude-skill-prompt-architect/issues"
+  },
+  "homepage": "https://github.com/ckelsoe/claude-skill-prompt-architect#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "prompt-architect/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node scripts/test.js",
+    "validate": "node scripts/validate-skill.js",
+    "install-user": "node scripts/install.js",
+    "install-project": "node scripts/install.js --project",
+    "prepublishOnly": "npm run validate"
+  },
+  "bin": {
+    "prompt-architect-install": "./scripts/install.js"
+  },
+  "claudeCode": {
+    "type": "skill",
+    "skillName": "prompt-architect",
+    "skillPath": "prompt-architect",
+    "version": "1.0.0",
+    "compatibility": {
+      "claudeCode": ">=1.0.0"
+    },
+    "frameworks": [
+      "CO-STAR",
+      "RISEN",
+      "RISE-IE",
+      "RISE-IX",
+      "TIDD-EC",
+      "RTF",
+      "Chain-of-Thought",
+      "Chain-of-Density"
+    ],
+    "features": {
+      "promptAnalysis": true,
+      "frameworkRecommendation": true,
+      "iterativeRefinement": true,
+      "qualityScoring": true
+    }
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

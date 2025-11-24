@@ -1,0 +1,85 @@
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# GitHub
+.github/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Development files
+tests/
+test/
+*.test.js
+*.spec.js
+coverage/
+.nyc_output/
+
+# CI/CD (keep only essentials)
+.travis.yml
+.gitlab-ci.yml
+circle.yml
+appveyor.yml
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.test
+.env.production
+
+# Build artifacts (if any)
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Lock files (keep package.json only)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archives
+*.tgz
+*.tar.gz
+*.zip
+
+# Documentation (keep only README)
+docs/
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Scripts (keep only what's needed)
+scripts/test.js
+
+# Miscellaneous
+*.bak
+*.orig
+*.rej
+.npmrc.local
