@@ -1,17 +1,16 @@
-# 🎯 Prompt Architect
+# Prompt Architect
 
-> Transform vague prompts into expert-level, structured prompts using 7 research-backed frameworks
+Transform vague prompts into expert-level, structured prompts using 7 research-backed frameworks.
 
 A comprehensive Claude Code Skill that analyzes, architects, and iteratively refines prompts through systematic framework application and guided dialogue.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blue.svg)](https://github.com/anthropics/claude-code)
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
-- [What is Prompt Architect?](#what-is-prompt-architect)
+- [Overview](#overview)
 - [Key Features](#key-features)
 - [Example Transformation](#example-transformation)
 - [Supported Frameworks](#supported-frameworks)
@@ -26,17 +25,17 @@ A comprehensive Claude Code Skill that analyzes, architects, and iteratively ref
 
 ---
 
-## What is Prompt Architect?
+## Overview
 
 Prompt Architect is a production-ready Claude Code Skill that elevates your prompting capabilities through:
 
-- **Intelligent Analysis**: Evaluates prompts across 5 quality dimensions (clarity, specificity, context, completeness, structure)
-- **Framework Recommendation**: Suggests the best framework(s) for your specific use case with clear reasoning
-- **Guided Dialogue**: Asks targeted clarifying questions to gather missing information progressively
-- **Systematic Application**: Applies selected framework to transform your prompt
-- **Iterative Refinement**: Continues improving based on feedback until perfect
+- **Intelligent Analysis** - Evaluates prompts across 5 quality dimensions (clarity, specificity, context, completeness, structure)
+- **Framework Recommendation** - Suggests the best framework(s) for your specific use case with clear reasoning
+- **Guided Dialogue** - Asks targeted clarifying questions to gather missing information progressively
+- **Systematic Application** - Applies selected framework to transform your prompt
+- **Iterative Refinement** - Continues improving based on feedback until perfect
 
-**Who is this for?**
+**Target Audience:**
 - Developers using Claude Code for software engineering tasks
 - Prompt engineers optimizing LLM interactions
 - AI practitioners seeking systematic prompt improvement
@@ -44,9 +43,9 @@ Prompt Architect is a production-ready Claude Code Skill that elevates your prom
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 🎯 7 Research-Backed Frameworks
+### 7 Research-Backed Frameworks
 
 | Framework | Best For | Complexity |
 |-----------|----------|------------|
@@ -59,7 +58,7 @@ Prompt Architect is a production-ready Claude Code Skill that elevates your prom
 | **Chain of Thought** | Reasoning, problem-solving | Medium |
 | **Chain of Density** | Iterative refinement, summarization | Medium |
 
-### 📊 Quality Scoring System
+### Quality Scoring System
 
 Every prompt is evaluated across:
 - **Clarity** (1-10): Is the goal clear and unambiguous?
@@ -68,14 +67,14 @@ Every prompt is evaluated across:
 - **Completeness** (1-10): Are all necessary elements present?
 - **Structure** (1-10): Is the prompt well-organized?
 
-### 💬 Progressive Disclosure
+### Progressive Disclosure
 
 - Asks 3-5 targeted questions at a time (never overwhelming)
 - Adapts questions based on framework selection
 - Builds understanding iteratively
 - Confirms assumptions before proceeding
 
-### 🔄 Continuous Iteration
+### Continuous Iteration
 
 - Shows before/after comparisons with explanations
 - Refines based on your feedback
@@ -84,7 +83,7 @@ Every prompt is evaluated across:
 
 ---
 
-## 🚀 Example Transformation
+## Example Transformation
 
 ### Before
 ```
@@ -149,51 +148,53 @@ RESPONSE FORMAT:
 - Context: 10/10
 - Completeness: 9/10
 - Structure: 9/10
-- **Overall: 8.8/10** ✨
+- **Overall: 8.8/10**
 
 ---
 
-## 📚 Supported Frameworks
+## Supported Frameworks
 
-### 🎨 CO-STAR (Context, Objective, Style, Tone, Audience, Response)
+### CO-STAR (Context, Objective, Style, Tone, Audience, Response)
+
 **Best for:** Content creation, writing tasks, communications
 
 **Components:**
-- **C**ontext: Background information and situation
-- **O**bjective: Clear goal and purpose
-- **S**tyle: Writing style and formatting approach
-- **T**one: Voice and emotional quality
-- **A**udience: Target reader characteristics
-- **R**esponse: Expected format and structure
+- **Context** - Background information and situation
+- **Objective** - Clear goal and purpose
+- **Style** - Writing style and formatting approach
+- **Tone** - Voice and emotional quality
+- **Audience** - Target reader characteristics
+- **Response** - Expected format and structure
 
 **Example Use Cases:** Blog posts, emails, presentations, marketing copy, documentation
 
 ---
 
-### 🔄 RISEN (Role, Instructions, Steps, End goal, Narrowing)
+### RISEN (Role, Instructions, Steps, End goal, Narrowing)
+
 **Best for:** Multi-step processes, systematic procedures
 
 **Components:**
-- **R**ole: Expertise and perspective needed
-- **I**nstructions: High-level guidance
-- **S**teps: Detailed methodology
-- **E**nd goal: Success criteria
-- **N**arrowing: Constraints and boundaries
+- **Role** - Expertise and perspective needed
+- **Instructions** - High-level guidance
+- **Steps** - Detailed methodology
+- **End goal** - Success criteria
+- **Narrowing** - Constraints and boundaries
 
 **Example Use Cases:** Code reviews, workflows, systematic analysis, project planning
 
 ---
 
-### 📊 RISE (Dual Variants)
+### RISE (Dual Variants)
 
 #### RISE-IE (Input-Expectation)
 **Best for:** Data analysis, transformations, processing tasks
 
 **Components:**
-- **R**ole: Expertise needed
-- **I**nput: Data format and characteristics
-- **S**teps: Processing methodology
-- **E**xpectation: Output requirements
+- **Role** - Expertise needed
+- **Input** - Data format and characteristics
+- **Steps** - Processing methodology
+- **Expectation** - Output requirements
 
 **Example Use Cases:** CSV analysis, data processing, file transformations, report generation
 
@@ -201,43 +202,46 @@ RESPONSE FORMAT:
 **Best for:** Content creation with reference examples
 
 **Components:**
-- **R**ole: Expertise needed
-- **I**nstructions: Task guidance
-- **S**teps: Workflow process
-- **E**xamples: Reference samples
+- **Role** - Expertise needed
+- **Instructions** - Task guidance
+- **Steps** - Workflow process
+- **Examples** - Reference samples
 
 **Example Use Cases:** Creative writing, template-based content, style matching
 
 ---
 
-### ✅ TIDD-EC (Task, Instructions, Do, Don't, Examples, Context)
+### TIDD-EC (Task, Instructions, Do, Don't, Examples, Context)
+
 **Best for:** High-precision tasks requiring explicit boundaries
 
 **Components:**
-- **T**ask type: Nature of the work
-- **I**nstructions: What to accomplish
-- **D**o: Explicit positive guidance
-- **D**on't: Explicit negative guidance (what to avoid)
-- **E**xamples: Reference samples
-- **C**ontext: Background information
+- **Task type** - Nature of the work
+- **Instructions** - What to accomplish
+- **Do** - Explicit positive guidance
+- **Don't** - Explicit negative guidance (what to avoid)
+- **Examples** - Reference samples
+- **Context** - Background information
 
 **Example Use Cases:** Code generation with standards, compliance tasks, quality-critical work
 
 ---
 
-### 🎯 RTF (Role, Task, Format)
+### RTF (Role, Task, Format)
+
 **Best for:** Simple, well-defined tasks
 
 **Components:**
-- **R**ole: Expertise required
-- **T**ask: What needs to be done
-- **F**ormat: Output structure
+- **Role** - Expertise required
+- **Task** - What needs to be done
+- **Format** - Output structure
 
 **Example Use Cases:** Quick conversions, simple formatting, straightforward requests
 
 ---
 
-### 🧠 Chain of Thought
+### Chain of Thought
+
 **Best for:** Complex reasoning and problem-solving
 
 **Approach:**
@@ -250,7 +254,8 @@ RESPONSE FORMAT:
 
 ---
 
-### 🔁 Chain of Density
+### Chain of Density
+
 **Best for:** Iterative refinement and compression
 
 **Approach:**
@@ -263,23 +268,23 @@ RESPONSE FORMAT:
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Install the Skill
 
 **macOS/Linux:**
 ```bash
-cp -r skills/prompt-architect ~/.claude-code/skills/
+cp -r prompt-architect ~/.claude-code/skills/
 ```
 
 **Windows (Command Prompt):**
 ```cmd
-xcopy skills\prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
+xcopy prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
 ```
 
 **Windows (PowerShell):**
 ```powershell
-Copy-Item -Path "skills\prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
+Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
 ```
 
 ### 2. Restart Claude Code
@@ -301,25 +306,25 @@ The skill will automatically:
 
 ---
 
-## 💻 Installation
+## Installation
 
 ### Prerequisites
 
-- **Claude Code** installed and configured
-- **Python 3.7+** (optional, for analysis scripts)
+- Claude Code installed and configured
+- Python 3.7+ (optional, for analysis scripts)
 
-### Detailed Installation Steps
+### Installation Steps
 
 1. **Clone or Download this Repository**
 
 ```bash
-git clone https://github.com/yourusername/prompt-architect.git
+git clone https://github.com/ckelsoe/prompt-architect.git
 cd prompt-architect
 ```
 
 2. **Copy Skill to Claude Code Directory**
 
-The skill needs to be in your Claude Code skills folder:
+The skill needs to be in your Claude Code skills folder.
 
 **Default Locations:**
 - Windows: `C:\Users\<YourName>\.claude-code\skills\`
@@ -330,13 +335,13 @@ The skill needs to be in your Claude Code skills folder:
 
 ```bash
 # macOS/Linux
-cp -r skills/prompt-architect ~/.claude-code/skills/
+cp -r prompt-architect ~/.claude-code/skills/
 
 # Windows (PowerShell)
-Copy-Item -Path "skills\prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
+Copy-Item -Path "prompt-architect" -Destination "$env:USERPROFILE\.claude-code\skills\prompt-architect" -Recurse
 
 # Windows (Command Prompt)
-xcopy skills\prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
+xcopy prompt-architect %USERPROFILE%\.claude-code\skills\prompt-architect /E /I
 ```
 
 3. **Verify Installation**
@@ -372,7 +377,7 @@ You should see the skill activate with prompt analysis and framework recommendat
 
 ---
 
-## 📖 Usage
+## Usage
 
 ### Basic Usage
 
@@ -433,7 +438,7 @@ Skill: Perfect! Let me apply the RISEN framework...
 
 ---
 
-## 🧭 Framework Selection Guide
+## Framework Selection Guide
 
 ### Decision Tree
 
@@ -478,7 +483,7 @@ Is it reasoning/problem-solving?
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 prompt-architect/
@@ -486,91 +491,63 @@ prompt-architect/
 ├── README.md                          # This file
 ├── LICENSE                            # MIT License
 │
-├── docs/                              # 📚 Comprehensive Documentation
-│   ├── START_HERE.md                  # Quick orientation guide
-│   ├── README.md                      # Detailed project overview
-│   ├── DESIGN_SPECIFICATION.md        # Complete architecture
-│   ├── IMPLEMENTATION_GUIDE.md        # Deployment & customization
-│   ├── EXAMPLE_INTERACTIONS.md        # Real dialogue examples
-│   ├── PROJECT_SUMMARY.md             # Project summary
-│   ├── DEPLOYMENT_READY.md            # Deployment status
-│   └── ADDING_NEW_FRAMEWORKS.md       # Guide for adding frameworks
-│
-└── skills/                            # 🚀 Deployable Skill Package
-    ├── README.md                      # Deployment instructions
-    └── prompt-architect/              # ← Copy this to Claude Code
-        ├── SKILL.md                   # Core skill instructions (5 KB)
-        │
-        ├── scripts/                   # Analysis Utilities
-        │   ├── framework_analyzer.py  # Framework recommendation logic
-        │   └── prompt_evaluator.py    # Quality scoring system
-        │
-        ├── references/                # Framework Documentation
-        │   └── frameworks/            # Loaded on-demand
-        │       ├── co-star.md         # CO-STAR reference (600+ lines)
-        │       ├── risen.md           # RISEN reference (600+ lines)
-        │       ├── rise.md            # RISE (IE/IX) reference (700+ lines)
-        │       ├── tidd-ec.md         # TIDD-EC reference (600+ lines)
-        │       ├── rtf.md             # RTF reference (500+ lines)
-        │       ├── chain-of-thought.md # CoT reference (500+ lines)
-        │       └── chain-of-density.md # CoD reference (500+ lines)
-        │
-        └── assets/
-            └── templates/             # Framework Templates
-                ├── co-star_template.txt
-                ├── risen_template.txt
-                ├── rise-ie_template.txt
-                ├── rise-ix_template.txt
-                ├── tidd-ec_template.txt
-                ├── rtf_template.txt
-                └── hybrid_template.txt
+└── prompt-architect/                  # The skill
+    ├── SKILL.md                       # Core skill instructions (5 KB)
+    │
+    ├── scripts/                       # Analysis Utilities
+    │   ├── framework_analyzer.py      # Framework recommendation logic
+    │   └── prompt_evaluator.py        # Quality scoring system
+    │
+    ├── references/                    # Framework Documentation
+    │   └── frameworks/                # Loaded on-demand
+    │       ├── co-star.md             # CO-STAR reference (600+ lines)
+    │       ├── risen.md               # RISEN reference (600+ lines)
+    │       ├── rise.md                # RISE (IE/IX) reference (700+ lines)
+    │       ├── tidd-ec.md             # TIDD-EC reference (600+ lines)
+    │       ├── rtf.md                 # RTF reference (500+ lines)
+    │       ├── chain-of-thought.md    # CoT reference (500+ lines)
+    │       └── chain-of-density.md    # CoD reference (500+ lines)
+    │
+    └── assets/
+        └── templates/                 # Framework Templates
+            ├── co-star_template.txt
+            ├── risen_template.txt
+            ├── rise-ie_template.txt
+            ├── rise-ix_template.txt
+            ├── tidd-ec_template.txt
+            ├── rtf_template.txt
+            └── hybrid_template.txt
 ```
 
 **Total Size:** ~200 KB
 
 **Core Components:**
-- **SKILL.md**: Main skill logic and instructions
-- **7 Framework Docs**: Complete references with examples
-- **7 Templates**: Ready-to-use structures
-- **2 Python Scripts**: Analysis and scoring utilities
+- **SKILL.md** - Main skill logic and instructions
+- **7 Framework Docs** - Complete references with examples
+- **7 Templates** - Ready-to-use structures
+- **2 Python Scripts** - Analysis and scoring utilities
 
 ---
 
-## 📚 Documentation
-
-### For Users
-
-| Document | Purpose | Read Time |
-|----------|---------|-----------|
-| [START_HERE.md](docs/START_HERE.md) | Quick orientation | 2 min |
-| [README.md](docs/README.md) | Detailed overview | 10 min |
-| [EXAMPLE_INTERACTIONS.md](docs/EXAMPLE_INTERACTIONS.md) | Real usage examples | 15 min |
-
-### For Developers
-
-| Document | Purpose | Read Time |
-|----------|---------|-----------|
-| [DESIGN_SPECIFICATION.md](docs/DESIGN_SPECIFICATION.md) | Complete architecture | 30 min |
-| [IMPLEMENTATION_GUIDE.md](docs/IMPLEMENTATION_GUIDE.md) | Deployment guide | 20 min |
-| [ADDING_NEW_FRAMEWORKS.md](docs/ADDING_NEW_FRAMEWORKS.md) | Extend with new frameworks | 30 min |
+## Documentation
 
 ### Framework References
 
-Detailed documentation for each framework in `skills/prompt-architect/references/frameworks/`:
+Detailed documentation for each framework in `prompt-architect/references/frameworks/`:
 
-- **[co-star.md](skills/prompt-architect/references/frameworks/co-star.md)** - Context, Objective, Style, Tone, Audience, Response
-- **[risen.md](skills/prompt-architect/references/frameworks/risen.md)** - Role, Instructions, Steps, End goal, Narrowing
-- **[rise.md](skills/prompt-architect/references/frameworks/rise.md)** - Dual variants (IE & IX)
-- **[tidd-ec.md](skills/prompt-architect/references/frameworks/tidd-ec.md)** - Task, Instructions, Do, Don't, Examples, Context
-- **[rtf.md](skills/prompt-architect/references/frameworks/rtf.md)** - Role, Task, Format
-- **[chain-of-thought.md](skills/prompt-architect/references/frameworks/chain-of-thought.md)** - Step-by-step reasoning
-- **[chain-of-density.md](skills/prompt-architect/references/frameworks/chain-of-density.md)** - Iterative refinement
+- **co-star.md** - Context, Objective, Style, Tone, Audience, Response
+- **risen.md** - Role, Instructions, Steps, End goal, Narrowing
+- **rise.md** - Dual variants (IE & IX)
+- **tidd-ec.md** - Task, Instructions, Do, Don't, Examples, Context
+- **rtf.md** - Role, Task, Format
+- **chain-of-thought.md** - Step-by-step reasoning
+- **chain-of-density.md** - Iterative refinement
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions! Here's how you can help:
+Contributions are welcome! Here's how you can help:
 
 ### Ways to Contribute
 
@@ -582,19 +559,16 @@ We welcome contributions! Here's how you can help:
 
 ### Adding New Frameworks
 
-Want to add a new framework? Follow these steps:
-
-1. **Read the Guide**: Check [ADDING_NEW_FRAMEWORKS.md](docs/ADDING_NEW_FRAMEWORKS.md) for detailed instructions
-2. **Research**: Validate the framework has research backing
-3. **Document**: Create comprehensive framework reference (see existing in `references/frameworks/`)
-4. **Create Template**: Add template file in `assets/templates/`
-5. **Update SKILL.md**: Add framework to selection logic
-6. **Test**: Verify with multiple use cases
-7. **Submit PR**: Include examples and rationale
+1. Research and validate the framework has backing
+2. Create comprehensive framework reference (see existing in `references/frameworks/`)
+3. Add template file in `assets/templates/`
+4. Update SKILL.md framework selection logic
+5. Test with multiple use cases
+6. Submit pull request with examples and rationale
 
 ### Contribution Guidelines
 
-#### File Structure
+**File Structure:**
 ```
 New framework contributions should include:
 - references/frameworks/your-framework.md (600+ lines with examples)
@@ -603,14 +577,14 @@ New framework contributions should include:
 - Examples in documentation
 ```
 
-#### Documentation Standards
+**Documentation Standards:**
 - Clear component definitions
 - Multiple use case examples
 - Selection criteria explanation
 - Before/after comparisons
 - Research citations
 
-#### Testing Requirements
+**Testing Requirements:**
 - Test with 3-5 diverse prompts
 - Verify scoring improves
 - Check framework selection logic
@@ -620,7 +594,7 @@ New framework contributions should include:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/new-framework`)
-3. Make your changes following the guidelines above
+3. Make your changes following the guidelines
 4. Test thoroughly with multiple examples
 5. Update relevant documentation
 6. Commit with clear messages
@@ -631,54 +605,35 @@ New framework contributions should include:
    - Test results
    - Documentation updates
 
-### Code of Conduct
+---
 
-- Be respectful and constructive
-- Focus on improving prompt quality
-- Provide evidence for framework effectiveness
-- Help others learn and improve
-- Follow existing code and documentation patterns
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### License Summary
+
+**Permissions:**
+- Commercial use
+- Modification
+- Distribution
+- Private use
+
+**Conditions:**
+- License and copyright notice must be included
+
+**Limitations:**
+- No liability
+- No warranty
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-### What This Means
-
-✅ **You CAN:**
-- Use commercially
-- Modify the code
-- Distribute
-- Sublicense
-- Use privately
-
-✅ **You MUST:**
-- Include original license
-- Include copyright notice
-
-❌ **You CANNOT:**
-- Hold liable
-- Use trademarks without permission
-
----
-
-## 🙏 Acknowledgments
-
-- **Framework Research**: Based on established prompting frameworks from the AI/ML community
-- **Claude Code**: Built as a skill for Anthropic's Claude Code platform
-- **Community**: Inspired by the prompt engineering community's best practices
-
----
-
-## 📞 Support & Contact
+## Support
 
 ### Getting Help
 
-- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/yourusername/prompt-architect/issues)
-- **Documentation**: Check the [docs/](docs/) folder for comprehensive guides
-- **Examples**: See [EXAMPLE_INTERACTIONS.md](docs/EXAMPLE_INTERACTIONS.md) for usage patterns
+- **Issues** - Report bugs or request features via [GitHub Issues](https://github.com/ckelsoe/prompt-architect/issues)
+- **Documentation** - Check framework references in `references/frameworks/`
 
 ### FAQ
 
@@ -686,36 +641,24 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 A: Ensure the skill folder is in the correct location (`~/.claude-code/skills/prompt-architect/`) and restart Claude Code.
 
 **Q: Can I use this without Claude Code?**
-A: Yes! Include SKILL.md content in your Claude API system prompt. See [IMPLEMENTATION_GUIDE.md](docs/IMPLEMENTATION_GUIDE.md).
+A: Yes! Include SKILL.md content in your Claude API system prompt.
 
 **Q: Which framework should I use?**
-A: The skill will recommend one, but check the [Framework Selection Guide](#framework-selection-guide) above.
+A: The skill will recommend one, but check the Framework Selection Guide above.
 
 **Q: Can I add my own framework?**
-A: Absolutely! See [ADDING_NEW_FRAMEWORKS.md](docs/ADDING_NEW_FRAMEWORKS.md) for a complete guide.
+A: Yes! See the Contributing section for guidelines.
 
 **Q: Does this work with other LLMs?**
-A: The frameworks are universal, but the skill is optimized for Claude. You may need to adapt for other models.
+A: The frameworks are universal, but the skill is optimized for Claude.
 
 ---
 
-## 🚀 What's Next?
+## Project Status
 
-After installing Prompt Architect:
-
-1. **Try It Out** - Start with simple prompts and see the improvements
-2. **Explore Frameworks** - Read framework docs to understand when to use each
-3. **Customize** - Add your own frameworks or modify templates
-4. **Share** - Help others improve their prompts
-5. **Contribute** - Submit improvements and new frameworks
-
----
-
-## 📊 Project Status
-
-**Version**: 1.0.0 (Production Ready)
-**Status**: ✅ Complete and Tested
-**Last Updated**: November 2024
+**Version:** 1.0.0
+**Status:** Production Ready
+**Last Updated:** November 2024
 
 ### Roadmap
 
@@ -726,17 +669,8 @@ After installing Prompt Architect:
 - [x] Example interactions
 - [ ] Additional framework variants
 - [ ] Community framework submissions
-- [ ] Interactive web demo
 - [ ] Framework effectiveness metrics
 
 ---
 
-## ⭐ Star This Project
-
-If you find Prompt Architect useful, please consider starring the repository! It helps others discover this tool and motivates continued development.
-
----
-
-**Happy Prompting!** 🎯
-
-Built with ❤️ for the prompt engineering community
+**Built for the prompt engineering community**
