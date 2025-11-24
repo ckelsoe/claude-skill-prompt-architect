@@ -22,7 +22,10 @@ jobs:
         with:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
-      
+
+      - name: Upgrade npm for OIDC Trusted Publishing
+        run: npm install -g npm@latest
+
       - name: Install dependencies
         run: npm ci || npm install
       
@@ -36,12 +39,9 @@ jobs:
         run: npm publish --provenance --access public
       
       - name: Create GitHub Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
           body: |
             See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
             
