@@ -1,8 +1,8 @@
-# Prompt Architect
+# Claude Code Skill: Prompt Architect
 
 Transform vague prompts into expert-level, structured prompts using 7 research-backed frameworks.
 
-A comprehensive Claude Code Skill that analyzes, architects, and iteratively refines prompts through systematic framework application and guided dialogue.
+A comprehensive skill that analyzes, architects, and iteratively refines prompts through systematic framework application and guided dialogue.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
