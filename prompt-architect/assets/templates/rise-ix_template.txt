@@ -1,0 +1,28 @@
+ROLE:
+[Define who the AI should embody - persona or expertise level]
+
+INSTRUCTIONS:
+[Specify the main task or directive:
+- What to create or accomplish
+- Core requirements
+- Key guidelines to follow
+- Specific constraints or considerations]
+
+STEPS:
+1. [Approach or methodology step 1]
+2. [Step 2 - how to execute the task]
+3. [Step 3 - continue with workflow]
+4. [Add more steps as needed for the creative/instruction process...]
+
+EXAMPLES:
+[Provide positive examples showing desired output:
+- Reference materials that demonstrate the style
+- Format examples to emulate
+- Successful outputs from similar tasks
+- 2-3 concrete examples recommended]
+
+Example 1: [First reference example demonstrating desired output]
+
+Example 2: [Second reference example showing format/style to match]
+
+[Optional] Example 3: [Third example if additional clarity needed]

@@ -1,0 +1,17 @@
+CONTEXT:
+[Provide background information, situation, and any relevant constraints. What's the setting? What's happened before? What limitations exist?]
+
+OBJECTIVE:
+[State the clear, specific goal you want to achieve. What exactly do you want accomplished? What does success look like?]
+
+STYLE:
+[Specify the writing style, format preferences, and structural approach. Should it follow a particular style guide? What format is needed?]
+
+TONE:
+[Define the emotional quality and attitude. Should it be professional, casual, urgent, friendly, authoritative, empathetic, etc.?]
+
+AUDIENCE:
+[Identify who will consume this output. What's their expertise level? What do they care about? What are their characteristics?]
+
+RESPONSE FORMAT:
+[Specify the expected output structure. How long? What sections? What level of detail? Any specific format requirements?]

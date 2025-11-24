@@ -1,0 +1,21 @@
+ROLE:
+[Define the expertise level, persona, or perspective to adopt. What knowledge should be demonstrated?]
+
+INSTRUCTIONS:
+[Provide high-level guidance, principles, and overarching direction. What methodology or approach should guide this work?]
+
+STEPS:
+1. [First specific action or stage]
+2. [Second specific action or stage]
+3. [Third specific action or stage]
+[Continue with detailed, sequential steps...]
+
+END GOAL:
+[Define success criteria and final desired outcome. What should be true when complete? How will we know it's done correctly?]
+
+NARROWING:
+- Do NOT: [Specific thing to avoid]
+- Avoid: [Approach or pattern to avoid]
+- Out of scope: [What's not included]
+- Stay within: [Boundaries and constraints]
+- Constraints: [Limitations to respect]

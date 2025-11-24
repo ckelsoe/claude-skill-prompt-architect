@@ -1,0 +1,23 @@
+ROLE:
+[Define the perspective or expertise needed for this task]
+
+INPUT:
+[Specify what data/content is being provided:
+- Format and structure (CSV, JSON, text, etc.)
+- Key characteristics and fields
+- Any quirks or special considerations
+- What to expect in the data]
+
+STEPS:
+1. [How to process the input - first action]
+2. [Processing step 2 - transformation or analysis]
+3. [Processing step 3 - continue with methodology]
+4. [Add more processing/analysis steps as needed...]
+
+EXPECTATION:
+[Define what the output should look like:
+- Format and structure
+- Required elements and sections
+- Level of detail needed
+- Length or size constraints
+- Specific deliverables]

@@ -1,0 +1,13 @@
+ROLE:
+[Define the expertise or perspective needed for this task]
+
+TASK:
+[State clearly and specifically what needs to be done. Be explicit about the deliverable.]
+
+FORMAT:
+[Specify exactly how the output should be structured:
+- Overall format (document, code, list, table, etc.)
+- Required sections or components
+- Length constraints
+- Style requirements
+- Any specific formatting rules]

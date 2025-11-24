@@ -1,0 +1,45 @@
+TASK TYPE:
+[Clear indication of the activity type - e.g., Data Analysis, Customer Support Response, Technical Documentation, Content Translation]
+
+INSTRUCTIONS:
+[Specific steps and guidelines to accomplish the task]
+1. [First step or action]
+2. [Second step or action]
+3. [Continue with methodology and sequence]
+4. [Add more steps as needed...]
+
+DO:
+[Specify actions, language, structures, and information that MUST be included]
+- [Required action or element #1]
+- [Language or tone to use]
+- [Structure or format to follow]
+- [Information that must be present]
+- [Add more as needed...]
+
+DON'T:
+[Highlight actions, elements, or approaches to AVOID]
+- [Error or mistake to prevent #1]
+- [Inappropriate language or approach to avoid]
+- [Common pitfall to prevent]
+- [Limitation or boundary not to cross]
+- [Add more as needed...]
+
+EXAMPLES:
+[Provide concrete examples of desired outcomes]
+
+Example 1 (Good):
+[Detailed example showing desired output, format, tone, and structure]
+
+Example 2 (Optional - Additional Good Example):
+[Another example demonstrating quality and approach]
+
+[Optional] Example 3 (What to Avoid):
+[Counter-example showing what NOT to do, if helpful]
+
+CONTEXT:
+[Background information and user-provided content that affects the task]
+- [Relevant background information]
+- [Business or domain constraints]
+- [User-provided data or content to reference]
+- [Situational factors affecting the task]
+- [Standards or guidelines that apply]

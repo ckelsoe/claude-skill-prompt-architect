@@ -1,0 +1,43 @@
+=== HYBRID FRAMEWORK TEMPLATE ===
+
+This template combines elements from multiple frameworks when appropriate.
+
+CONTEXT (from CO-STAR):
+[Background, situation, constraints]
+
+ROLE (from RISEN/RISE/RTF):
+[Expertise or perspective needed]
+
+OBJECTIVE (from CO-STAR):
+[Specific goal to achieve]
+
+INPUT (from RISE - if applicable):
+[What's being provided, format, characteristics]
+
+INSTRUCTIONS (from RISEN - if needed):
+[Guiding principles, methodology]
+
+STEPS (from RISEN/RISE):
+1. [Detailed action 1]
+2. [Detailed action 2]
+3. [Continue...]
+
+AUDIENCE (from CO-STAR - if relevant):
+[Who this is for, their characteristics]
+
+TONE & STYLE (from CO-STAR - if relevant):
+[Emotional quality and writing style]
+
+END GOAL/EXPECTATION (from RISEN/RISE):
+[Success criteria, final outcome, output format]
+
+NARROWING (from RISEN - if needed):
+- Avoid: [Constraints]
+- Out of scope: [Boundaries]
+
+RESPONSE FORMAT (from CO-STAR/RTF):
+[Detailed output structure requirements]
+
+---
+Note: When using hybrid approach, include only the components that add value.
+Remove sections that don't apply to your specific use case.
