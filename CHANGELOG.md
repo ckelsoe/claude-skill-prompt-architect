@@ -5,6 +5,19 @@ All notable changes to the Prompt Architect Claude Code skill will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.3] - 2026-03-10
+
+### Fixed
+- **`npm install -g` now automatically installs the Claude Code skill** — no separate command needed
+  - Root cause: npm was stripping the `bin[prompt-architect-install]` entry during publish, so the install command never existed after `npm install -g`
+  - Fix: added `"postinstall": "node scripts/install.js"` — npm runs this automatically after every install
+  - Global installs (`npm install -g`) auto-install the skill to `~/.claude/skills/`
+  - Project installs (`npm install`) print a message explaining how to install for the project
+- Added `scripts/` to the `files` array so `install.js` is explicitly included in the npm package
+- Removed the broken `bin` entry that npm kept stripping
+
+---
+
 ## [2.1.2] - 2026-03-10
 
 ### Fixed
