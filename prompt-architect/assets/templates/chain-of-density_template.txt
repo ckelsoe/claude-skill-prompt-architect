@@ -1,0 +1,46 @@
+=== CHAIN OF DENSITY (CoD) TEMPLATE ===
+
+Use when: iterative compression or quality improvement is the goal —
+          summarization, explanation optimization, content densification.
+
+─────────────────────────────────────────────
+SOURCE CONTENT:
+[Paste the content to be refined/compressed here]
+
+─────────────────────────────────────────────
+OPTIMIZATION GOAL:
+[What should improve with each pass?]
+Examples:
+- "Reduce word count by 20% each pass while retaining all key information"
+- "Increase information density — remove filler, make every sentence earn its place"
+- "Improve clarity — each pass should be more direct and easier to understand"
+
+─────────────────────────────────────────────
+NUMBER OF ITERATIONS:
+[How many refinement passes? Typical: 2-4]
+Iteration 1: [First pass — initial improvement]
+Iteration 2: [Second pass — tighten further]
+Iteration 3: [Optional — final polish]
+
+─────────────────────────────────────────────
+ITERATION INSTRUCTIONS:
+For each iteration:
+1. Identify what can be cut, compressed, or clarified
+2. Apply the changes
+3. Verify: does this version better meet the optimization goal than the previous?
+4. Stop when: [define your stopping criterion]
+   Examples: "length < 150 words", "no filler words remain", "3 iterations complete"
+
+─────────────────────────────────────────────
+OUTPUT FORMAT:
+[What format should the final result be in?]
+Examples: paragraph, bullet list, 1-sentence summary, structured sections
+
+─────────────────────────────────────────────
+OPTIONAL — SHOW INTERMEDIATE VERSIONS:
+Set to YES if you want to see each iteration's output.
+Set to NO if you only want the final result.
+
+─────────────────────────────────────────────
+NOTE: Use Self-Refine when the improvement goal is multi-dimensional quality
+(e.g., accuracy + tone + completeness). CoD is specifically for density/compression.

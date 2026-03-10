@@ -983,6 +983,8 @@ prompt-architect/
             ├── step-back_template.txt
             ├── least-to-most_template.txt
             ├── plan-and-solve_template.txt
+            ├── chain-of-thought_template.txt
+            ├── chain-of-density_template.txt
             ├── self-refine_template.txt
             ├── cai-critique-revise_template.txt
             ├── devils-advocate_template.txt
@@ -996,7 +998,7 @@ prompt-architect/
 **Core Components:**
 - **SKILL.md** - Main skill logic and instructions (intent-based selection system)
 - **27 Framework Docs** - Complete references with examples
-- **27 Templates** - Ready-to-use structures
+- **29 Templates** - Ready-to-use structures (27 frameworks + hybrid + chain variants)
 - **2 Python Scripts** - Analysis and scoring utilities
 
 ---
@@ -1130,7 +1132,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### FAQ
 
 **Q: Why isn't the skill activating?**
-A: Ensure the skill folder is in the correct location (`~/.claude-code/skills/prompt-architect/`) and restart Claude Code.
+A: Ensure the skill folder is in the correct location (`~/.claude/skills/prompt-architect/`) and restart Claude Code.
 
 **Q: Can I use this without Claude Code?**
 A: Yes! Include SKILL.md content in your Claude API system prompt.

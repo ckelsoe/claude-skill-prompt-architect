@@ -1,6 +1,6 @@
 ---
 name: prompt-architect
-description: Analyzes and transforms prompts using 27 research-backed frameworks across 7 intent categories (create, transform, reason, critique, recover, clarify, agentic). Provides intent-based framework recommendations, asks targeted questions, and structures prompts for maximum effectiveness. Use when users need expert prompt engineering guidance.
+description: Analyzes and improves prompts using 27 research-backed frameworks across 7 intent categories. Use when a user wants to improve, rewrite, structure, or engineer a prompt — including requests like "help me write a better prompt", "improve this prompt", "what framework should I use", "make this prompt more effective", or any prompt engineering task. Recommends the right framework based on intent (create, transform, reason, critique, recover, clarify, agentic), asks targeted questions, and delivers a structured, high-quality result.
 ---
 
 # Prompt Architect
@@ -225,6 +225,8 @@ Framework templates in `assets/templates/` provide structure:
 - `step-back_template.txt` - Step-back question + principle application
 - `least-to-most_template.txt` - Decompose + sequential solving
 - `plan-and-solve_template.txt` - PS+ trigger phrase structure
+- `chain-of-thought_template.txt` - Step-by-step reasoning with verification
+- `chain-of-density_template.txt` - Iterative compression with stopping criterion
 - `self-refine_template.txt` - Generate → Feedback → Refine structure
 - `cai-critique-revise_template.txt` - Principle → Critique → Revision structure
 - `devils-advocate_template.txt` - Position attack with severity ranking

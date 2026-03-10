@@ -1,0 +1,49 @@
+=== CHAIN OF THOUGHT (CoT) TEMPLATE ===
+
+Use when: step-by-step reasoning is needed, logic must be shown,
+          or intermediate conclusions feed into the final answer.
+
+─────────────────────────────────────────────
+PROBLEM / QUESTION:
+[State the problem clearly. Include all relevant numbers, conditions,
+or constraints — everything needed to reason from.]
+
+─────────────────────────────────────────────
+REASONING INSTRUCTION:
+Solve this step-by-step. For each step:
+1. State what you're doing and why
+2. Show your work / intermediate calculation / intermediate conclusion
+3. Verify it before moving to the next step
+
+─────────────────────────────────────────────
+STEPS:
+Step 1: [First reasoning step]
+→ Result: [intermediate conclusion or value]
+
+Step 2: [Next reasoning step, building on Step 1]
+→ Result: [intermediate conclusion or value]
+
+Step 3: [Continue as needed...]
+→ Result: [...]
+
+─────────────────────────────────────────────
+VERIFICATION:
+Before finalizing: check that each step follows logically,
+no conditions were overlooked, and the conclusion matches the question asked.
+
+─────────────────────────────────────────────
+FINAL ANSWER:
+[State the answer clearly after the reasoning chain is complete]
+
+─────────────────────────────────────────────
+TRIGGER VARIANTS (zero-shot alternatives):
+
+Simple:     "Think step by step."
+Explicit:   "Solve this step-by-step, showing your reasoning at each stage."
+Verified:   "Work through this step-by-step, verify each step before continuing,
+             then state your final answer."
+Few-shot:   Prefix with 1-2 worked examples before the actual problem.
+
+NOTE: For numerical/calculation problems, prefer Plan-and-Solve (PS+).
+      For multi-hop problems with dependencies, prefer Least-to-Most.
+      CoT is best for linear step-by-step reasoning on a single problem.
