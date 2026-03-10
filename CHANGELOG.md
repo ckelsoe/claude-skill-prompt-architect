@@ -5,6 +5,21 @@ All notable changes to the Prompt Architect Claude Code skill will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.0] - 2026-03-10
+
+### Added
+- **Cross-platform adapters** in `adapters/` — ready-to-use versions for AI tools other than Claude Code:
+  - `adapters/system-prompt.md` — Universal system prompt for any LLM API, ChatGPT Custom GPT, etc.
+  - `adapters/for-openai-codex-cli.md` — For OpenAI Codex CLI (`AGENTS.md`)
+  - `adapters/for-cursor.mdc` — For Cursor editor (`.cursor/rules/` MDC format)
+  - `adapters/for-github-copilot.md` — For GitHub Copilot (`.github/copilot-instructions.md`)
+  - `adapters/for-windsurf.md` — For Windsurf editor (`.windsurfrules`)
+  - `adapters/README.md` — Full documentation: install steps, limitations, troubleshooting per platform
+- **README "Use with Other AI Tools" section** — quick-install commands for all supported platforms
+- `adapters/` added to `package.json` files array — adapters now ship inside the npm package
+
+---
+
 ## [2.0.0] - 2026-03-10
 
 ### Breaking Changes
