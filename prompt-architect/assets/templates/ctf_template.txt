@@ -1,0 +1,15 @@
+CONTEXT:
+[Describe the situation, background, or circumstances surrounding this task.
+Include relevant details like: current state, constraints, what's already been done,
+why this is needed, and any important background the AI should know.]
+
+TASK:
+[State clearly and specifically what needs to be done. Be explicit about the deliverable.]
+
+FORMAT:
+[Specify exactly how the output should be structured:
+- Overall format (document, code, list, table, etc.)
+- Required sections or components
+- Length constraints
+- Style requirements
+- Any specific formatting rules]

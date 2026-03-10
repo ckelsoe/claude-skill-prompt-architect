@@ -1,6 +1,6 @@
 ---
 name: prompt-architect
-description: Analyzes and transforms prompts using 7 research-backed frameworks (CO-STAR, RISEN, RISE-IE, RISE-IX, TIDD-EC, RTF, Chain of Thought, Chain of Density). Provides framework recommendations, asks targeted questions, and structures prompts for maximum effectiveness. Use when users need expert prompt engineering guidance.
+description: Analyzes and transforms prompts using 8 research-backed frameworks (CO-STAR, RISEN, RISE-IE, RISE-IX, TIDD-EC, CTF, RTF, Chain of Thought, Chain of Density). Provides framework recommendations, asks targeted questions, and structures prompts for maximum effectiveness. Use when users need expert prompt engineering guidance.
 ---
 
 # Prompt Architect
@@ -24,7 +24,7 @@ Identify the use case type:
 - Data transformation → likely **RISE-IE** (Input-Expectation)
 - Content creation with examples → likely **RISE-IX** (Instructions-Examples)
 - Tasks with explicit dos/don'ts → likely **TIDD-EC**
-- Simple focused task → likely **RTF**
+- Simple focused task → likely **RTF** or **CTF**
 - Complex reasoning → likely **Chain of Thought**
 - Iterative refinement → likely **Chain of Density**
 
@@ -37,7 +37,8 @@ Recommend 1-2 frameworks with clear reasoning:
 - **RISE-IE**: Input→output transformations with data processing (analytical)
 - **RISE-IX**: Content creation with instruction-based workflow (creative, with examples)
 - **TIDD-EC**: High-precision tasks requiring explicit dos/don'ts and clear boundaries
-- **RTF**: Simple, well-defined tasks where format is primary concern
+- **CTF**: Simple tasks where situational context drives the prompt more than AI persona
+- **RTF**: Simple, well-defined tasks where expertise framing is primary concern
 - **Chain of Thought**: Reasoning tasks requiring step-by-step logic
 - **Chain of Density**: Tasks benefiting from iterative refinement
 
@@ -53,6 +54,7 @@ Ask targeted questions (3-5 at a time) based on identified gaps:
 **For RISE-IE**: Role, input format/characteristics, processing steps, output expectations?
 **For RISE-IX**: Role, task instructions, workflow steps, reference examples?
 **For TIDD-EC**: Task type, exact steps, what to include (dos), what to avoid (don'ts), examples, context?
+**For CTF**: What is the situation/background, exact task, output format?
 **For RTF**: Expertise needed, exact task, output format?
 **For Chain of Thought**: Problem, reasoning steps, verification?
 **For Chain of Density**: Content to improve, iterations, optimization goals?
@@ -87,6 +89,7 @@ Detailed framework docs in `references/frameworks/`:
 - `risen.md` - Role, Instructions, Steps, End goal, Narrowing
 - `rise.md` - **Dual variant support**: RISE-IE (Input-Expectation) & RISE-IX (Instructions-Examples)
 - `tidd-ec.md` - Task type, Instructions, Do, Don't, Examples, Context
+- `ctf.md` - Context, Task, Format
 - `rtf.md` - Role, Task, Format
 - `chain-of-thought.md` - Step-by-step reasoning techniques
 - `chain-of-density.md` - Iterative refinement through compression
@@ -101,6 +104,7 @@ Framework templates in `assets/templates/` provide structure:
 - `rise-ie_template.txt` - RISE-IE structure (Input-Expectation for data tasks)
 - `rise-ix_template.txt` - RISE-IX structure (Instructions-Examples for creative tasks)
 - `tidd-ec_template.txt` - TIDD-EC structure (Task, Instructions, Do, Don't, Examples, Context)
+- `ctf_template.txt` - CTF structure (Context-Task-Format for situational prompts)
 - `rtf_template.txt` - Full RTF structure
 - `hybrid_template.txt` - Combined framework approach
 
