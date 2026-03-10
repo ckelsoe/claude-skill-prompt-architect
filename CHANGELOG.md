@@ -151,26 +151,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## Version History
-
-### [1.0.0] - 2025-01-24
-Initial production release with 7 frameworks, analysis system, and complete documentation.
-
----
-
-## Breaking Changes
-
-### v1.0.0
-- Initial release (no breaking changes)
-
 ---
 
 ## Migration Notes
 
+### v1.x → v2.0.0
+
+The framework selection system in SKILL.md was completely restructured:
+
+- **Old format**: flat "use case → framework" list (20 items)
+- **New format**: 7 intent categories (A–G), each with a discriminating table
+
+**Impact on users**: No breaking changes to templates or prompts themselves. The change is in how the skill reasons about which framework to apply. If you have custom tooling that parsed the old flat list format, update it to use the 7-category intent system.
+
+**Impact on `framework_analyzer.py`**: Rewritten with intent-based two-phase scoring. If you imported this script directly, the function signatures for `analyze_use_case()` are unchanged but the internal scoring logic is different.
+
 ### For v1.0.0 Users
-- No migration needed
-- All framework templates are backwards compatible
-- Existing prompts work with new version
+
+- No migration needed for prompts or templates
+- All 27 framework templates are backwards compatible
+- The 7 new frameworks added in v1.1.0–v1.3.0 are additive only
 
 ---
 

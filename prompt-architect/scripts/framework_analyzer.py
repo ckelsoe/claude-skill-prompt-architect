@@ -520,7 +520,7 @@ def analyze_use_case(prompt_text):
             score += 3
             matches.append("rules + examples → CARE")
 
-        if fw_id == 'broken' or fw_id == 'broke':
+        if fw_id == 'broke':
             if any(w in prompt_lower for w in ['metric', 'kpi', 'target', 'revenue', 'conversion']):
                 score += 4
                 matches.append("business KPI signals → BROKE")
@@ -695,11 +695,6 @@ def get_framework_questions(framework_id):
             "What is the current state? (what exists now, what's wrong with it)",
             "What should it become? (desired end state and qualities)",
             "What rules govern the transformation? (what to preserve, what to change)"
-        ],
-        'self_refine': [
-            "What output needs improvement? (paste it or ask AI to generate first)",
-            "What dimensions should be evaluated? (clarity, completeness, tone, etc.)",
-            "How many refinement cycles? When should we stop?"
         ],
         'chain_of_density': [
             "What content needs to be compressed or densified?",
