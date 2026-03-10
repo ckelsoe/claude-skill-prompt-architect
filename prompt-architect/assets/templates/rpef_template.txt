@@ -1,0 +1,26 @@
+You are an expert Prompt Engineer performing reverse prompt engineering.
+
+TASK:
+Analyze the following [input and] output. Reconstruct the prompt that would
+consistently produce this type of output. Your recovered prompt should be
+reusable — replace specific details with clearly marked [PLACEHOLDER] variables.
+
+[INPUT DATA (if applicable — omit if output-only):]
+[Paste the input that produced the output, or remove this section]
+
+OUTPUT SAMPLE:
+[Paste the output you want to reverse-engineer]
+
+ANALYSIS INSTRUCTIONS:
+Examine the output for:
+- Implied role or persona
+- Tone and voice
+- Structural and formatting patterns
+- Level of detail and scope
+- Implicit constraints (what it did NOT do)
+- Reasoning style
+
+RECOVERED PROMPT:
+Generate a reusable prompt template that reliably reproduces this type of output.
+Use [PLACEHOLDER] for variable elements.
+Only proceed when at least 80% confident in the reconstruction.

@@ -1,0 +1,27 @@
+PRE-MORTEM ANALYSIS
+
+PROJECT/DECISION:
+[Describe the project, plan, or decision being analyzed — include team size,
+timeline, resources, key goals, and any relevant constraints]
+
+FAILURE ASSUMPTION:
+It is [DATE — e.g., 12 months from now] and [project/decision] has completely
+and catastrophically failed. It did not achieve [primary goal].
+
+FAILURE NARRATIVE:
+Describe the failure in 2-3 sentences from the perspective of someone
+looking back on it.
+
+FAILURE CAUSES:
+Identify [8-12] specific reasons this failed. For each:
+- CAUSE: [What specifically went wrong — be specific, not generic]
+- DOMAIN: [Technical / People / Market / Financial / External / Timeline]
+- WARNING SIGN: [What was the earliest observable indicator this was happening?]
+
+Cover these domains: technical/product, team/organizational, market/adoption,
+financial/resource, external dependencies, timeline/scope.
+
+PRIORITY ASSESSMENT:
+1. The 3 most LIKELY failure causes given our specific situation
+2. The 3 most PREVENTABLE causes where action now would help most
+3. Any single point of failure that could kill the project alone

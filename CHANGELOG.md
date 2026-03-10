@@ -5,6 +5,31 @@ All notable changes to the Prompt Architect Claude Code skill will be documented
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-03-10
+
+### Added
+- **7 New Frameworks** (total now 27):
+  - **RPEF** — Reverse Prompt Engineering: recover a reusable prompt from an existing output (EMNLP 2025)
+  - **Reverse Role Prompting** — AI-Led Interview: AI interviews you before executing (FATA, arXiv 2025, ~40% improvement)
+  - **Self-Refine** — Generate → Feedback → Refine loop for any output quality improvement (NeurIPS 2023, +5-40%)
+  - **Devil's Advocate** — Generate the strongest opposing argument against a position (ACM IUI 2024)
+  - **Pre-Mortem** — Assume failure, work backwards to specific causes with warning signs (Gary Klein)
+  - **CAI Critique-Revise** — Principle-based critique and revision (Anthropic Constitutional AI, 2022)
+  - **RCoT** — Reverse Chain-of-Thought: verify reasoning by reconstructing the question from the answer
+- **7 New Framework Reference Docs** in `references/frameworks/`
+- **7 New Templates** in `assets/templates/`
+
+### Changed
+- **SKILL.md completely restructured** with intent-based framework selection system:
+  - Replaced flat 20-item list with 7 intent categories: Recover, Clarify, Create, Transform, Reason, Critique, Agentic
+  - Each category has a discriminating table/decision for selecting among similar frameworks
+  - Added quick-reference taxonomy grouping all 27 frameworks by family
+  - Added clarification questions for all 7 new frameworks
+- README updated: framework count, table, supported frameworks entries, decision tree, quick reference, project structure, documentation
+- Framework count references updated to 27 throughout
+
+---
+
 ## [1.2.0] - 2026-03-10
 
 ### Added

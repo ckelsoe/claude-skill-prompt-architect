@@ -1,0 +1,31 @@
+STEP 1 — INITIAL ANSWER:
+Answer the following question using step-by-step reasoning. Show your work.
+
+QUESTION:
+[Your question with all conditions and constraints]
+
+---
+
+STEP 2 — QUESTION RECONSTRUCTION:
+Looking only at your answer above (do not re-read the original question),
+reconstruct the question that would produce this answer.
+List every condition, constraint, and piece of information the question
+must have contained.
+
+---
+
+STEP 3 — CROSS-CHECK:
+Now compare your reconstructed question to the actual original question.
+Identify:
+- Conditions in the ORIGINAL question MISSING from your reconstruction
+  (these are conditions you overlooked in your reasoning)
+- Conditions in your RECONSTRUCTION not in the original question
+  (assumptions you made that weren't stated)
+- Conditions present in both but interpreted differently
+
+---
+
+STEP 4 — CORRECTION:
+If discrepancies were found, generate a corrected answer that addresses
+every condition in the original question.
+If no discrepancies, confirm the original answer is correct.

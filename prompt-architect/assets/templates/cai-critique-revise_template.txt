@@ -1,0 +1,18 @@
+PRINCIPLE:
+[State the specific standard the output must satisfy — be precise and measurable]
+
+INITIAL OUTPUT:
+[The output to evaluate — AI-generated or human-written]
+
+CRITIQUE:
+Identify specific ways the output above violates or falls short of the
+principle stated above.
+- Quote the specific passages that are problematic
+- Explain precisely why each passage violates the principle
+- Focus only on failures against the principle (not general quality)
+
+REVISION:
+Rewrite the output to fully satisfy the principle.
+- Address every critique point identified above
+- Preserve all content that already satisfies the principle
+- Do not introduce new violations of the principle

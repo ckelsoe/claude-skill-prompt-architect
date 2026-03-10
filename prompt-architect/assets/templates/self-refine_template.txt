@@ -1,0 +1,16 @@
+INITIAL OUTPUT:
+[Paste the output to improve, or ask the AI to generate a first draft here]
+
+FEEDBACK DIMENSIONS:
+Review the output above for:
+1. [Dimension 1 — e.g., "Clarity: Are there any ambiguous or hard-to-parse sentences?"]
+2. [Dimension 2 — e.g., "Completeness: What important points are missing?"]
+3. [Dimension 3 — e.g., "Tone: Is the voice appropriate for the audience?"]
+4. [Dimension 4 — add or remove as needed]
+
+For each dimension: quote specific problematic passages, explain the issue,
+and suggest a concrete improvement.
+
+REFINEMENT:
+Rewrite the output addressing every point of your feedback above.
+Show the refined version only.

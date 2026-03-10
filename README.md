@@ -1,6 +1,6 @@
 # Claude Code Skill: Prompt Architect
 
-Transform vague prompts into expert-level, structured prompts using 20 research-backed frameworks.
+Transform vague prompts into expert-level, structured prompts using 27 research-backed frameworks across 7 intent categories.
 
 A comprehensive skill that analyzes, architects, and iteratively refines prompts through systematic framework application and guided dialogue.
 
@@ -45,7 +45,7 @@ Prompt Architect is a production-ready Claude Code Skill that elevates your prom
 
 ## Key Features
 
-### 20 Research-Backed Frameworks
+### 27 Research-Backed Frameworks Across 7 Intent Categories
 
 | Framework | Best For | Complexity |
 |-----------|----------|------------|
@@ -70,6 +70,13 @@ Prompt Architect is a production-ready Claude Code Skill that elevates your prom
 | **Plan-and-Solve (PS+)** | Zero-shot numerical/calculation reasoning | Low |
 | **Chain of Thought** | Reasoning, problem-solving | Medium |
 | **Chain of Density** | Iterative refinement, summarization | Medium |
+| **Self-Refine** | Iterative output quality improvement (any task) | Medium |
+| **CAI Critique-Revise** | Principle-based critique and revision (Anthropic) | Medium |
+| **Devil's Advocate** | Strongest opposing argument against a position | Low |
+| **Pre-Mortem** | Assume failure, identify specific causes | Low |
+| **RCoT** | Verify reasoning by reconstructing the question | Medium |
+| **RPEF** | Recover/reconstruct a prompt from an existing output | Low |
+| **Reverse Role Prompting** | AI interviews you before executing | Low |
 
 ### Quality Scoring System
 
@@ -397,6 +404,83 @@ RESPONSE FORMAT:
 - "Let's first understand the problem, extract relevant variables and their corresponding numerals, and devise a complete plan. Then, let's carry out the plan, calculate intermediate values, pay attention to computation, and solve the problem step by step."
 
 **Example Use Cases:** Financial calculations (MRR, CAC, payback), math word problems, resource estimation, any zero-shot reasoning task
+
+---
+
+### Self-Refine
+
+**Best for:** Iterative quality improvement of any output
+
+**Approach:** Generate → produce specific actionable feedback → refine → repeat until stopping criterion
+**Research:** Madaan et al. NeurIPS 2023 — +5-40% improvement across 7 task types
+
+**Example Use Cases:** Code review and rewriting, writing improvement, plan refinement, pre-submission QA
+
+---
+
+### CAI Critique-Revise
+
+**Best for:** Aligning output to an explicit stated principle or standard
+
+**Approach:** Initial output → critique against a specific principle → revision addressing every critique point
+**Research:** Anthropic Constitutional AI (arXiv 2212.08073, 2022) — principle-driven alignment
+
+**Example Use Cases:** Plain language compliance, brand voice enforcement, epistemic quality (claims vs. assertions), legal/regulatory language standards
+
+---
+
+### Devil's Advocate
+
+**Best for:** Generating the strongest possible opposing argument against a position
+
+**Approach:** Explicitly instructs the AI to attack a position as forcefully as possible — not balanced, not a straw man, but maximum-strength opposition
+**Research:** ACM IUI 2024 peer-reviewed study
+
+**Example Use Cases:** Decision stress-testing, architecture reviews, countering groupthink, stakeholder preparation, debiasing
+
+---
+
+### Pre-Mortem
+
+**Best for:** Identifying specific failure causes before they happen
+
+**Approach:** Assume the project has already failed → describe the failure → work backwards to specific causes with warning signs
+**Research:** Gary Klein's prospective hindsight — ~30% improvement over forward risk analysis
+
+**Example Use Cases:** Project kickoffs, product launches, technical migrations, high-stakes strategic decisions
+
+---
+
+### RCoT (Reverse Chain-of-Thought)
+
+**Best for:** Verifying that reasoning addressed all conditions in a multi-constraint question
+
+**Approach:** Generate answer → reconstruct the question from the answer → cross-check conditions → correct overlooked items
+**Research:** Academic backward reasoning literature (ACL 2025, NAACL 2025)
+
+**Example Use Cases:** Multi-condition logic problems, complex requirements analysis, high-stakes reasoning verification
+
+---
+
+### RPEF (Reverse Prompt Engineering)
+
+**Best for:** Recovering a reusable prompt template from an existing output
+
+**Approach:** Provide an output (and optionally the input) → AI analyzes it for tone, structure, constraints, persona → generates a reusable template with [PLACEHOLDER] variables
+**Research:** Li & Klabjan, EMNLP 2025 (arXiv 2411.06729)
+
+**Example Use Cases:** Recovering lost prompts, codifying successful one-time outputs, building style templates, understanding system prompt behavior
+
+---
+
+### Reverse Role Prompting (AI-Led Interview)
+
+**Best for:** Complex tasks where you know the goal but struggle to specify all requirements
+
+**Approach:** Provide a minimal intent statement → AI asks targeted clarifying questions → executes once context is complete
+**Research:** FATA framework (arXiv 2508.08308, 2025) — ~40% improvement over standard prompting
+
+**Example Use Cases:** Complex strategy tasks, non-expert users, requirements gathering, generating complete prompts from an interview
 
 ---
 
@@ -771,6 +855,21 @@ Is it structured long-form content (multiple semi-independent sections)?
 ├─ YES → Skeleton of Thought
 └─ NO ↓
 
+Do you need to recover a prompt from an existing output?
+├─ YES → RPEF (Reverse Prompt Engineering)
+└─ NO ↓
+
+Do you need to clarify requirements before starting?
+├─ YES → Reverse Role Prompting (AI interviews you first)
+└─ NO ↓
+
+Do you need to critique, stress-test, or verify something?
+├─ General quality improvement → Self-Refine
+├─ Align to explicit principle → CAI Critique-Revise
+├─ Find opposing argument → Devil's Advocate
+├─ Find failure modes → Pre-Mortem
+└─ Verify conditions weren't missed → RCoT
+
 Is it a simple task? Choose by primary driver:
 ├─ Expert role matters most → RTF
 ├─ Situational context matters most → CTF
@@ -808,6 +907,13 @@ Is it a simple task? Choose by primary driver:
 | Marketing copy A/B options | CRISPE | Experiment component generates variants |
 | Business strategy with KPIs | BROKE | Key Results + Evolve self-critique |
 | Healthcare/compliance content | CARE | Explicit rules and quality standards |
+| Improve any output quality | Self-Refine | Multi-dimensional feedback + refine loop |
+| Enforce plain language standard | CAI Critique-Revise | Principle-based critique |
+| Stress-test a strategy | Devil's Advocate | Strongest opposing argument |
+| Project risk analysis | Pre-Mortem | Assumed failure → backward causes |
+| Multi-condition logic verification | RCoT | Backward reconstruction cross-check |
+| Lost/need to recover a prompt | RPEF | Output → reconstructed template |
+| Requirements unclear upfront | Reverse Role Prompting | AI interviews you first |
 
 ---
 
@@ -847,7 +953,14 @@ prompt-architect/
     │       ├── least-to-most.md       # Least-to-Most reference (Google Brain)
     │       ├── plan-and-solve.md      # Plan-and-Solve PS+ reference (ACL 2023)
     │       ├── chain-of-thought.md    # CoT reference (500+ lines)
-    │       └── chain-of-density.md    # CoD reference (500+ lines)
+    │       ├── chain-of-density.md    # CoD reference (500+ lines)
+    │       ├── self-refine.md         # Self-Refine (NeurIPS 2023)
+    │       ├── cai-critique-revise.md # CAI Critique-Revise (Anthropic 2022)
+    │       ├── devils-advocate.md     # Devil's Advocate (ACM IUI 2024)
+    │       ├── pre-mortem.md          # Pre-Mortem (Gary Klein)
+    │       ├── rcot.md                # Reverse Chain-of-Thought
+    │       ├── rpef.md                # Reverse Prompt Engineering (EMNLP 2025)
+    │       └── reverse-role.md        # AI-Led Interview / FATA (arXiv 2025)
     │
     └── assets/
         └── templates/                 # Framework Templates
@@ -870,13 +983,20 @@ prompt-architect/
             ├── step-back_template.txt
             ├── least-to-most_template.txt
             ├── plan-and-solve_template.txt
+            ├── self-refine_template.txt
+            ├── cai-critique-revise_template.txt
+            ├── devils-advocate_template.txt
+            ├── pre-mortem_template.txt
+            ├── rcot_template.txt
+            ├── rpef_template.txt
+            ├── reverse-role_template.txt
             └── hybrid_template.txt
 ```
 
 **Core Components:**
-- **SKILL.md** - Main skill logic and instructions
-- **20 Framework Docs** - Complete references with examples
-- **20 Templates** - Ready-to-use structures
+- **SKILL.md** - Main skill logic and instructions (intent-based selection system)
+- **27 Framework Docs** - Complete references with examples
+- **27 Templates** - Ready-to-use structures
 - **2 Python Scripts** - Analysis and scoring utilities
 
 ---
@@ -907,6 +1027,13 @@ Detailed documentation for each framework in `prompt-architect/references/framew
 - **plan-and-solve.md** - Zero-shot PS+ trigger (ACL 2023)
 - **chain-of-thought.md** - Step-by-step reasoning
 - **chain-of-density.md** - Iterative refinement
+- **self-refine.md** - Generate → Feedback → Refine (NeurIPS 2023)
+- **cai-critique-revise.md** - Principle-based critique + revision (Anthropic 2022)
+- **devils-advocate.md** - Strongest opposing argument (ACM IUI 2024)
+- **pre-mortem.md** - Assumed failure → backward cause analysis (Gary Klein)
+- **rcot.md** - Reverse Chain-of-Thought verification
+- **rpef.md** - Reverse Prompt Engineering (EMNLP 2025)
+- **reverse-role.md** - AI-Led Interview / FATA (arXiv 2025)
 
 ---
 

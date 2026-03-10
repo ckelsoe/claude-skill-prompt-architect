@@ -1,6 +1,6 @@
 ---
 name: prompt-architect
-description: Analyzes and transforms prompts using 20 research-backed frameworks (CO-STAR, RISEN, RISE-IE, RISE-IX, TIDD-EC, CTF, RTF, APE, BAB, RACE, CRISPE, BROKE, CARE, Tree of Thought, ReAct, Skeleton of Thought, Step-Back, Least-to-Most, Plan-and-Solve, Chain of Thought, Chain of Density). Provides framework recommendations, asks targeted questions, and structures prompts for maximum effectiveness. Use when users need expert prompt engineering guidance.
+description: Analyzes and transforms prompts using 27 research-backed frameworks across 7 intent categories (create, transform, reason, critique, recover, clarify, agentic). Provides intent-based framework recommendations, asks targeted questions, and structures prompts for maximum effectiveness. Use when users need expert prompt engineering guidance.
 ---
 
 # Prompt Architect
@@ -18,60 +18,103 @@ When a user provides a prompt to improve, analyze across dimensions:
 - **Constraints**: Are limitations specified?
 - **Output Format**: Is desired format clear?
 
-Identify the use case type:
-- Content creation → likely **CO-STAR**
-- Multi-step process → likely **RISEN**
-- Data transformation → likely **RISE-IE** (Input-Expectation)
-- Content creation with examples → likely **RISE-IX** (Instructions-Examples)
-- Tasks with explicit dos/don'ts → likely **TIDD-EC**
-- Simple focused task → likely **APE**, **RTF**, or **CTF**
-- Transforming existing content → likely **BAB**
-- Expert task with context + outcome bar → likely **RACE**
-- Comprehensive task needing multiple output variants → likely **CRISPE**
-- Business deliverable with measurable KPIs → likely **BROKE**
-- Task with explicit rules and examples → likely **CARE**
-- Decision between multiple approaches → likely **Tree of Thought**
-- Agentic / tool-use task → likely **ReAct**
-- Structured long-form content → likely **Skeleton of Thought**
-- Principle-grounded reasoning → likely **Step-Back**
-- Compositional multi-hop problem → likely **Least-to-Most**
-- Zero-shot numerical/calculation reasoning → likely **Plan-and-Solve**
-- Complex reasoning → likely **Chain of Thought**
-- Iterative refinement → likely **Chain of Density**
+### 2. Intent-Based Framework Selection
 
-### 2. Framework Recommendation
+With 27 frameworks, identify the user's **primary intent** first, then use the discriminating questions within that category.
 
-Recommend 1-2 frameworks with clear reasoning:
+---
 
-- **CO-STAR**: Content/writing where audience, tone, style matter
-- **RISEN**: Complex processes needing methodology and constraints
-- **RISE-IE**: Input→output transformations with data processing (analytical)
-- **RISE-IX**: Content creation with instruction-based workflow (creative, with examples)
-- **TIDD-EC**: High-precision tasks requiring explicit dos/don'ts and clear boundaries
-- **CTF**: Simple tasks where situational context drives the prompt more than AI persona
-- **RTF**: Simple, well-defined tasks where expertise framing is primary concern
-- **APE**: Ultra-minimal — action, why it matters, and success bar; for one-off quick prompts
-- **BAB**: Transformation tasks — rewriting, refactoring, converting existing content
-- **RACE**: Medium complexity — role + action + context + explicit expectation of success
-- **CRISPE**: Comprehensive — capacity/role, insight, instructions, personality, experiment (multiple variants)
-- **BROKE**: Business-oriented — background, role, objective, key results, evolve (self-critique loop)
-- **CARE**: Constraint-driven — context, ask, rules, examples (NNg framework)
-- **Tree of Thought**: Decision-making requiring exploration of multiple solution branches
-- **ReAct**: Agentic tasks interleaving reasoning and tool/action use
-- **Skeleton of Thought**: Generate structure/skeleton first, then expand each point
-- **Step-Back**: Abstract to underlying principles first, then apply to specific question
-- **Least-to-Most**: Decompose into ordered subproblems, solve sequentially (simplest first)
-- **Plan-and-Solve (PS+)**: Zero-shot — plan first, extract variables, calculate step by step
-- **Chain of Thought**: Reasoning tasks requiring step-by-step logic
-- **Chain of Density**: Tasks benefiting from iterative refinement
+**A. RECOVER** — Reconstruct a prompt from an existing output
+→ **RPEF** (Reverse Prompt Engineering)
+*Signal: "I have a good output but need/lost the prompt"*
 
-**Note**: RISE has two variants - choose RISE-IE for data processing, RISE-IX for content creation
-**Note**: TIDD-EC excels when you need explicit positive/negative guidance and error prevention
-**Note**: Simple task ladder (least to most structure): APE → CTF/RTF → RACE → CRISPE/BROKE → RISEN/CO-STAR
-**Note**: Reasoning ladder: Plan-and-Solve (zero-shot) → Chain of Thought (linear) → Least-to-Most (compositional) → Step-Back (principled) → Tree of Thought (branching) → ReAct (agentic)
-**Note**: Content structure ladder: APE → SoT (skeleton) → RISEN (methodology) → CO-STAR (full)
+---
 
-### 3. Clarification Questions
+**B. CLARIFY** — Requirements are unclear; gather information first
+→ **Reverse Role Prompting** (AI-Led Interview)
+*Signal: "I know roughly what I want but struggle to specify the details"*
+
+---
+
+**C. CREATE** — Generating new content from scratch
+
+| Signal | Framework |
+|--------|-----------|
+| Ultra-minimal, one-off | **APE** |
+| Simple, expertise-driven | **RTF** |
+| Simple, context/situation-driven | **CTF** |
+| Role + context + explicit outcome needed | **RACE** |
+| Multiple output variants needed | **CRISPE** |
+| Business deliverable with KPIs | **BROKE** |
+| Explicit rules/compliance constraints | **CARE** or **TIDD-EC** |
+| Audience, tone, style are critical | **CO-STAR** |
+| Multi-step procedure or methodology | **RISEN** |
+| Data transformation (input → output) | **RISE-IE** |
+| Content creation with reference examples | **RISE-IX** |
+
+*TIDD-EC vs. CARE: separate Do/Don't lists → TIDD-EC; combined rules + examples → CARE*
+
+---
+
+**D. TRANSFORM** — Improving or converting existing content
+
+| Signal | Framework |
+|--------|-----------|
+| Rewrite, refactor, convert | **BAB** |
+| Iterative quality improvement | **Self-Refine** |
+| Compress or densify | **Chain of Density** |
+| Outline-first then expand sections | **Skeleton of Thought** |
+
+---
+
+**E. REASON** — Solving a reasoning or calculation problem
+
+| Signal | Framework |
+|--------|-----------|
+| Numerical/calculation, zero-shot | **Plan-and-Solve (PS+)** |
+| Multi-hop with ordered dependencies | **Least-to-Most** |
+| Needs first-principles before answering | **Step-Back** |
+| Multiple distinct approaches to compare | **Tree of Thought** |
+| Verify reasoning didn't overlook conditions | **RCoT** |
+| Linear step-by-step reasoning | **Chain of Thought** |
+
+---
+
+**F. CRITIQUE** — Stress-testing, attacking, or verifying output
+
+| Signal | Framework |
+|--------|-----------|
+| General quality improvement | **Self-Refine** |
+| Align to explicit principle/standard | **CAI Critique-Revise** |
+| Find the strongest opposing argument | **Devil's Advocate** |
+| Identify failure modes before they happen | **Pre-Mortem** |
+| Verify reasoning didn't miss conditions | **RCoT** |
+
+*Self-Refine = any quality. CAI = principle compliance. Devil's Advocate = opposing arguments. Pre-Mortem = failure analysis. RCoT = condition verification.*
+
+---
+
+**G. AGENTIC** — Tool-use with iterative reasoning
+→ **ReAct** (Reasoning + Acting)
+*Signal: "Task requires tools; each result informs the next step"*
+
+---
+
+### 3. Framework Quick Reference
+
+One-line per framework (load `references/frameworks/` for full detail):
+
+**Simple:** APE | RTF | CTF
+**Medium:** RACE | CARE | BAB | BROKE | CRISPE
+**Comprehensive:** CO-STAR | RISEN | TIDD-EC
+**Data:** RISE-IE | RISE-IX
+**Reasoning:** Plan-and-Solve | Chain of Thought | Least-to-Most | Step-Back | Tree of Thought | RCoT
+**Structure/Iteration:** Skeleton of Thought | Chain of Density
+**Critique/Quality:** Self-Refine | CAI Critique-Revise | Devil's Advocate | Pre-Mortem
+**Meta/Reverse:** RPEF | Reverse Role Prompting
+**Agentic:** ReAct
+
+### 4. Clarification Questions
 
 Ask targeted questions (3-5 at a time) based on identified gaps:
 
@@ -96,6 +139,13 @@ Ask targeted questions (3-5 at a time) based on identified gaps:
 **For Plan-and-Solve**: Problem with all relevant numbers/variables?
 **For Chain of Thought**: Problem, reasoning steps, verification?
 **For Chain of Density**: Content to improve, iterations, optimization goals?
+**For Self-Refine**: Output to improve, feedback dimensions, stop condition?
+**For CAI Critique-Revise**: The principle to enforce, output to critique?
+**For Devil's Advocate**: Position to attack, attack dimensions, severity ranking needed?
+**For Pre-Mortem**: Project/decision, time horizon, domains to analyze?
+**For RCoT**: Question with all conditions, initial answer to verify?
+**For RPEF**: Output sample to reverse-engineer, input data if available?
+**For Reverse Role**: Intent statement, domain of expertise, interview mode (batch vs. conversational)?
 
 ### 4. Apply Framework
 
@@ -143,6 +193,13 @@ Detailed framework docs in `references/frameworks/`:
 - `plan-and-solve.md` - Zero-shot: plan + extract variables + calculate (PS+)
 - `chain-of-thought.md` - Step-by-step reasoning techniques
 - `chain-of-density.md` - Iterative refinement through compression
+- `self-refine.md` - Generate → Feedback → Refine loop (NeurIPS 2023)
+- `cai-critique-revise.md` - Principle-based critique + revision (Anthropic)
+- `devils-advocate.md` - Strongest opposing argument generation (ACM IUI 2024)
+- `pre-mortem.md` - Assume failure, identify causes + warning signs (Gary Klein)
+- `rcot.md` - Reverse Chain-of-Thought: verify by reconstructing the question
+- `rpef.md` - Reverse Prompt Engineering: recover prompt from output (EMNLP 2025)
+- `reverse-role.md` - AI-Led Interview: AI asks you questions first (FATA)
 
 Load these when applying specific frameworks for detailed component guidance, selection criteria, and examples.
 
@@ -168,6 +225,13 @@ Framework templates in `assets/templates/` provide structure:
 - `step-back_template.txt` - Step-back question + principle application
 - `least-to-most_template.txt` - Decompose + sequential solving
 - `plan-and-solve_template.txt` - PS+ trigger phrase structure
+- `self-refine_template.txt` - Generate → Feedback → Refine structure
+- `cai-critique-revise_template.txt` - Principle → Critique → Revision structure
+- `devils-advocate_template.txt` - Position attack with severity ranking
+- `pre-mortem_template.txt` - Failure assumption + cause analysis
+- `rcot_template.txt` - 4-step backward verification structure
+- `rpef_template.txt` - Output analysis + recovered prompt template
+- `reverse-role_template.txt` - Intent + interview trigger structure
 - `hybrid_template.txt` - Combined framework approach
 
 ## Key Principles

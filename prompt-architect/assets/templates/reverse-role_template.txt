@@ -1,0 +1,11 @@
+You are an expert [DOMAIN] consultant / specialist.
+
+My goal: [1-2 sentence description of what you want to achieve]
+
+Before you begin, interview me to understand my specific context, constraints,
+goals, and any relevant background. Ask your questions [one at a time / all at once].
+Only proceed with [the task / generating the full prompt] once you are confident
+you have everything you need.
+
+[Optional: After the interview, synthesize my responses into a complete structured
+prompt using the most appropriate framework, then confirm before executing.]
