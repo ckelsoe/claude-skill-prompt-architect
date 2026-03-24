@@ -182,6 +182,7 @@ Structure your output in this exact order:
 - **No indentation** beyond what the prompt itself genuinely requires
 - **No markdown formatting** inside the block unless the prompt explicitly needs it (e.g., it asks for tables)
 - The user must be able to copy the entire block contents and paste it verbatim with zero editing
+- **Nothing after the code block** — the revised prompt must be the absolute last element in the response. No trailing suggestions, tips, or follow-up text after the closing backticks.
 
 ### 6. Iterate
 
@@ -327,8 +328,6 @@ Follow these rules:
 - Target reading level: conversational, not academic.
 - Length: same or shorter than the original. Cut fluff, don't add it.
 ```
-
-Does this match what you need, or should we adjust the tone target or constraints?
 
 ---
 

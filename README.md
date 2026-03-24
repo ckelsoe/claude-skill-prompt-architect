@@ -568,7 +568,7 @@ Detects all installed AI agents and lets you choose where to install.
 
 ChatGPT natively supports [Agent Skills](https://agentskills.io). Available on Business, Enterprise, Edu, Teachers, and Healthcare plans.
 
-1. Download [`prompt-architect.skill`](https://github.com/ckelsoe/prompt-architect/releases/latest) from GitHub Releases
+1. Download [`prompt-architect.skill`](https://github.com/ckelsoe/prompt-architect/releases/latest/download/prompt-architect.skill) (direct download, always latest version)
 2. In ChatGPT, click your profile icon → **Skills**
 3. Click **New skill** → **Upload from your computer**
 4. Upload the `.skill` file
