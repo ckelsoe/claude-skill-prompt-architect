@@ -6,6 +6,18 @@ Works with **Claude Code, ChatGPT, Gemini CLI, Cursor, GitHub Copilot, Windsurf,
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm](https://img.shields.io/npm/v/@ckelsoe/prompt-architect)](https://www.npmjs.com/package/@ckelsoe/prompt-architect) [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-blue)](https://agentskills.io)
 
+## Quick Start
+
+```bash
+npx @ckelsoe/prompt-architect
+```
+
+The interactive installer detects your AI agents (Claude Code, Gemini CLI, Cursor, Copilot, Codex, and more) and lets you choose where to install.
+
+> **Important:** Use `npx`, not `npm install`. The `npx` command runs the interactive multi-agent installer. Running `npm install` will only install to Claude Code silently via the postinstall hook.
+
+> Requires `.npmrc` with `@ckelsoe:registry=https://npm.pkg.github.com` and a GitHub token with `read:packages` scope.
+
 ---
 
 ## Table of Contents

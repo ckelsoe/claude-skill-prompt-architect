@@ -5,7 +5,7 @@ license: MIT
 compatibility: Requires no external dependencies. Works with any Agent Skills compatible tool.
 metadata:
   author: ckelsoe
-  version: "3.2.1"
+  version: "3.2.2"
   homepage: https://github.com/ckelsoe/prompt-architect
 ---
 
